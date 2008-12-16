@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Graphical desktop/Other
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
 Patch0:		lxtask-0.1-fix-desktop-file.patch
-Patch1:		lxtask-r1079.patch
+Patch1:		lxtask-r1081.patch
 URL:		http://lxde.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel desktop-file-utils
