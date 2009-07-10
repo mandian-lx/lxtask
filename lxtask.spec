@@ -9,6 +9,7 @@ Patch0:		lxtask-0.1.1-fix-desktop-file.patch
 URL:		http://lxde.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel desktop-file-utils
+BuildRequires:	intltool
 
 %description
 Lightweight and desktop independent task manager.
