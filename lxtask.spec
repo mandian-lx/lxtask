@@ -5,7 +5,7 @@ Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-Patch0:		lxtask-0.1.4-automake_112.patch
+Patch0:		lxtask-0.1.4-automake_113.patch
 URL:		http://lxde.sourceforge.net/
 BuildRequires:	gtk+2-devel desktop-file-utils
 BuildRequires:	intltool
