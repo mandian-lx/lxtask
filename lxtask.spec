@@ -9,6 +9,7 @@ Patch0:		lxtask-0.1.4-automake_112.patch
 URL:		http://lxde.sourceforge.net/
 BuildRequires:	gtk+2-devel desktop-file-utils
 BuildRequires:	intltool
+BuildRequires:	automake
 
 %description
 Lightweight and desktop independent task manager.
