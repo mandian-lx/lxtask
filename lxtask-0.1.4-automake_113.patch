@@ -14,3 +14,14 @@
  	echo "Install the appropriate package for your distribution,"
  	echo "or get the source tarball at http://ftp.gnu.org/gnu/automake/"
  	exit 1
+--- lxtask-0.1.4/configure.ac.orig	2013-04-12 17:00:54.377183786 +0100
++++ lxtask-0.1.4/configure.ac	2013-04-12 17:01:57.049180124 +0100
+@@ -4,7 +4,7 @@
+ AC_PROG_INTLTOOL(, [no-xml])
+ AM_MAINTAINER_MODE
+ 
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS(config.h)
+ 
+ AC_PROG_CC
+ AC_PROG_INSTALL
