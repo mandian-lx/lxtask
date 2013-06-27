@@ -4,32 +4,31 @@ Version:	0.1.4
 Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-Patch0:		lxtask-0.1.4-automake_113.patch
-URL:		http://lxde.sourceforge.net/
-BuildRequires:	pkgconfig(gtk+-x11-2.0) desktop-file-utils
+Url:		http://lxde.sourceforge.net/
+Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
+Patch0:	lxtask-0.1.4-automake_113.patch
+BuildRequires:	desktop-file-utils
 BuildRequires:	intltool
-BuildRequires:	automake
+BuildRequires:	pkgconfig(gtk+-x11-2.0)
 
 %description
 Lightweight and desktop independent task manager.
 
 %prep
 %setup -q
-%patch0 -p1
+%apply_patches
+./autogen.sh
 
 %build
-./autogen.sh
 %configure2_5x
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %{name}
 
 %files -f %{name}.lang
-%defattr(-, root, root)
-%{_bindir}/%name
+%{_bindir}/%{name}
 %{_datadir}/applications/*.desktop
+
