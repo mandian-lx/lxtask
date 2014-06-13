@@ -1,7 +1,7 @@
 Summary:	Lightweight and desktop independent task manager
 Name:		lxtask
 Version:	0.1.4
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://lxde.sourceforge.net/
